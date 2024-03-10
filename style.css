@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+/*page wrapper*/
+.page-wrapper{
+       height: 100%;
+       background-image: url("coffeenew.jpg");
+       height: 100%;
+       max-width: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #111;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a{
+          text-decoration: none;
+          color: white;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-menu-toggle{
+           display: none;
+           color: white;
+}  
+
+/*side navbar */
+
+.side-navbar{
+     width: 50%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: -60%;
+     padding: 20px;
+     color: rgb(255, 255, 255);
+     transition: 1s;
+     height: 100%;
+     background-color: white;
+     height: 100%;
+     max-width: 100%;
+     background-color: #111;
+     z-index: 2;
+     
+     
+}
+
+.side-navbar-link{
+       margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+   
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+/*welcome page*/
+       .welcome-page{
+        padding: 50px;
+        padding-top: 110px;
+       }
+.welcome-page button{
+    --color: #000000;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: transparent;
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #ffffff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #ffffff;
+    transition: 0s;
+   }
+
+.quotes{
+    margin-top: 110px;
+ 
+}
+.quotes h3{
+    margin-left: 450px;
+}
+
+/*about us*/
+  .about-us{
+    padding: 20px;
+    text-align: center;
+  }
+
+
+/* Footer*/
+.footer{
+           background-color: #111;
+           justify-content: center;
+}
+.footercontainer{
+    width: auto;
+    padding: 70px 30px 20px;
+    
+}
+.socialicons{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    
+}
+.socialicons a i{
+      font-size: 2em;
+      color: #111;
+      opacity: 0.9;
+     
+}
+
+/*hover effects on socialicons*/
+.socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  
+
+}
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+   
+}
+.footer-nav{
+    justify-content: center;
+}
+.footer-nav ul{
+          display: flex;
+          justify-content: center;  
+          list-style-type: none;
+          
+}
+.footer-nav ul li a{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+   
+}
+.footer-nav ul li a:hover{
+    text-decoration: underline;
+}
+.footer-nav ul li a{
+    opacity: 1;
+}
+.footer-bottom{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footer-bottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 400;
+    margin: opx 5px;
+}
+
+
+@media  screen and (max-width:600px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+}
+@media screen and (min-width: 601px) {
+    .quotes {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .quotes {
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 601px) {
+    .welcome-page {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .welcome-page {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 600px){
+    .footer-nav ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+  }
+ 
